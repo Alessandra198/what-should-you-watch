@@ -18,7 +18,7 @@
   border: 1px solid rgb(159, 29, 102);
 }
 
-.Options button {
+.Options input {
   background-color: rgb(216, 186, 255);
   display: block;
   margin: 10px auto;
@@ -33,7 +33,7 @@
   transition: all 200ms ease-in-out;
 }
 
-.Options button:hover {
+.Options input:hover {
   color: rgb(216, 186, 255);
   border: 1px solid rgb(216, 186, 255);
   background-color: rgb(159, 29, 102);

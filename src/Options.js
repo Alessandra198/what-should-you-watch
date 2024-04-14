@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import Search from "./Search";
 import "./Options.css";
 
 export default function Options() {
+  let [state, setState] = useState(null);
+  let [loaded, setLoaded] = useState(false);
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    setLoaded(true);
+  }
+
+  function handleState(event) {
+    event.preventDefault();
+    setState(event.target.value);
+  }
   return (
     <div className="Options">
       <div className="container">
         <div className="row">
-          <select id="state" className="col">
+          <select id="state" className="col" onChange={handleState}>
             <option value="">Choose your State</option>
             <option value="us">United States</option>
             <option value="gb">United Kingdom</option>
@@ -34,7 +47,7 @@ export default function Options() {
             <option value="prime.subscription">Amazon Prime Video</option>
             <option value="hulu">Hulu</option>
             <option value="hbo">HBO</option>
-            <option value="disney">Disney Plus</option>
+            <option value="disney">Disney+</option>
           </select>
         </div>
         <div className="row">
@@ -62,8 +75,11 @@ export default function Options() {
             <option value="10767">Talk Show</option>
           </select>
         </div>
-        <button>Search</button>
+        <form>
+          <input type="submit" value="Search" onClick={handleSubmit} />
+        </form>
       </div>
+      <Search loaded={loaded} state={state} />
     </div>
   );
 }
