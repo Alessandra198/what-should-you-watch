@@ -1,0 +1,41 @@
+.Options select {
+  font-family: "Platypi", serif;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 10px 5px;
+  margin: 5px;
+  color: rgb(216, 186, 255);
+  background-color: rgb(159, 29, 102);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: all 200ms ease-in-out;
+  border: 1px solid rgb(159, 29, 102);
+}
+
+.Options select:hover {
+  cursor: pointer;
+  background-color: rgb(216, 186, 255);
+  color: rgb(159, 29, 102);
+  border: 1px solid rgb(159, 29, 102);
+}
+
+.Options button {
+  background-color: rgb(216, 186, 255);
+  display: block;
+  margin: 10px auto;
+  border: 1px solid rgb(216, 186, 255);
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Platypi", serif;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  color: rgb(159, 29, 102);
+  transition: all 200ms ease-in-out;
+}
+
+.Options button:hover {
+  color: rgb(216, 186, 255);
+  border: 1px solid rgb(216, 186, 255);
+  background-color: rgb(159, 29, 102);
+  scale: 1.1;
+}

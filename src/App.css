@@ -1,7 +1,12 @@
+.App .container {
+  padding-top: 20px;
+}
+
 .App h1 {
   text-align: center;
-  color: rgb(243, 227, 255);
+  color: rgb(159, 29, 102);
   font-size: 40px;
   font-family: "Platypi", serif;
   font-weight: 800;
+  padding: 10px;
 }
