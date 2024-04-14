@@ -11,17 +11,17 @@ export default function Options() {
   let [loaded, setLoaded] = useState(false);
   let [search, setSearch] = useState(null);
 
-  function handleClick(event) {
-    event.preventDefault();
-    setLoaded(true);
-    setSearch({
-      state: { state },
-      type: { type },
-      language: { language },
-      services: { services },
-      genres: { genres },
-    });
-  }
+function handleClick(event) {
+  event.preventDefault();
+  setLoaded(true);
+  setSearch({
+    state: state,
+    type: type,
+    language: language,
+    services: services,
+    genres: genres,
+  });
+}
 
   function handleState(event) {
     event.preventDefault();
