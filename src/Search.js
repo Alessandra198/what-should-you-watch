@@ -1,7 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Movies from "./Movies";
 
 export default function Search(props) {
+  let [response, setResponse] = useState(null);
   let apiKey = "bcf7495ca2mshc1792e93c27a4b1p17bdfcjsncf694e92cf93";
 
   useEffect(() => {
@@ -28,14 +30,14 @@ export default function Search(props) {
             "X-RapidAPI-Host": "streaming-availability.p.rapidapi.com",
           },
         })
-        .then((response) => console.log(response.data));
+        .then((response) => setResponse(response.data.result));
     }
   }, [props.loaded, props.search]);
 
   if (props.loaded) {
     return (
       <div>
-        <h2>Hello</h2>
+        <Movies response={response} />
       </div>
     );
   } else {
