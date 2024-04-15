@@ -48,14 +48,14 @@ export default function Options() {
     <div className="Options">
       <div className="container">
         <div className="row">
-          <select id="state" className="col" onChange={handleState}>
+          <select id="state" className="col-sm" onChange={handleState}>
             <option value="">Choose your State</option>
             <option value="us">United States</option>
             <option value="it">Italy</option>
             <option value="es">Spain</option>
             <option value="gb">United Kingdom</option>
           </select>
-          <select id="type" className="col" onChange={handleType}>
+          <select id="type" className="col-sm" onChange={handleType}>
             <option value="">Choose a type</option>
             <option value="movie">Movie</option>
             <option value="series">Series</option>
@@ -63,13 +63,13 @@ export default function Options() {
           </select>
         </div>
         <div className="row">
-          <select id="language" className="col" onChange={handleLanguage}>
+          <select id="language" className="col-sm" onChange={handleLanguage}>
             <option value="">Choose a language</option>
             <option value="en">English</option>
             <option value="es">Spanish</option>
             <option value="fr">French</option>
           </select>
-          <select id="services" className="col" onChange={handleServices}>
+          <select id="services" className="col-sm" onChange={handleServices}>
             <option value="">Choose a service</option>
             <option value="netflix">Netflix</option>
             <option value="prime.subscription">Amazon Prime Video</option>
@@ -81,7 +81,7 @@ export default function Options() {
         <div className="row">
           <select
             id="genres"
-            className="col text-center"
+            className="col-sm genre"
             onChange={handleGenres}
           >
             <option value="">Choose a genre</option>

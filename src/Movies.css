@@ -3,35 +3,42 @@
   font-family: "Platypi", serif;
 }
 
-.Movies h6 {
+.Movies h5 {
   text-align: center;
   color: rgba(7, 3, 44, 1);
   font-weight: bold;
 }
 
 .Movies em {
-    font-weight: bold;
-    color: rgba(7, 3, 44, 1);
+  font-weight: bold;
+  color: rgba(7, 3, 44, 1);
 }
 
-.Movies p {
+.Movies .paragraph {
   color: #d8baff;
   background-color: #9f1d66;
   padding: 5px 10px;
   margin: 0;
 }
 
+.Movies h6 {
+  font-size: 16px;
+}
 
+.Movies .plot {
+  margin: 0;
+}
 
 @media (max-width: 900px) {
-    .Movies h6{
-        font-size: 14px;
-    }
-    
-    .Movies small {
-        font-size: 12px;
-    }
-    .Movies p, em {
-        font-size: 13px;
-    }
+  .Movies h5 {
+    font-size: 14px;
+  }
+  .Movies small,
+  .Movies h6 {
+    font-size: 12px;
+  }
+  .Movies .paragraph,
+  .Movies em {
+    font-size: 13px;
+  }
 }

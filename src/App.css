@@ -10,3 +10,13 @@
   font-weight: 800;
   padding: 10px;
 }
+
+@media (max-width: 800px) {
+  .App h1 {
+    font-size: 30px;
+  }
+
+  .App .container {
+    padding: 30px;
+  }
+}

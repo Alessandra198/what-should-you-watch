@@ -18,6 +18,10 @@
   border: 1px solid rgb(159, 29, 102);
 }
 
+.Options .genre {
+  text-align: center;
+}
+
 .Options input {
   background-color: rgb(216, 186, 255);
   display: block;
@@ -38,4 +42,22 @@
   border: 1px solid rgb(216, 186, 255);
   background-color: rgb(159, 29, 102);
   scale: 1.1;
+}
+
+@media (max-width: 576px) {
+  .Options .genre {
+    text-align: left;
+  }
+}
+
+@media (max-width: 800px) {
+  .Options select {
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  .Options input {
+    font-size: 13px;
+    padding: 3px 10px;
+  }
 }

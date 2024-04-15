@@ -3,29 +3,27 @@ import "./Movies.css";
 
 export default function Movies(props) {
   if (props.response) {
-    console.log(props.response);
     return (
       <div className="Movies">
         <div className="row">
           {props.response.map(function (value, index) {
             return (
               <div key={index} className="col-md-4">
-                <p>
-                  <h6>{value.originalTitle}</h6>
-                  <div>
+                <div className="paragraph">
+                  <h5>{value.originalTitle}</h5>
                     <small>
-                      <em>Plot:</em> {value.overview}
+                        <em>Plot:</em> {value.overview}
                     </small>
-                  </div>
+                    <br />
                   <em className="cast">Cast:</em>
                   {value.cast.map(function (member, index) {
                     return (
-                      <small>
-                        <p key={index}>{member}</p>
+                      <small key={index}>
+                        <h6>{member}</h6>
                       </small>
                     );
                   })}
-                </p>
+                </div>
               </div>
             );
           })}
