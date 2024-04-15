@@ -32,7 +32,7 @@ export default function Search(props) {
         })
         .then((response) => setResponse(response.data.result));
     }
-  }, [props.loaded, props.search]);
+  }, [props.loaded, props.search, apiKey]);
 
   if (props.loaded) {
     return (
