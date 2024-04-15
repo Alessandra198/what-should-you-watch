@@ -11,17 +11,17 @@ export default function Options() {
   let [loaded, setLoaded] = useState(false);
   let [search, setSearch] = useState(null);
 
-function handleClick(event) {
-  event.preventDefault();
-  setLoaded(true);
-  setSearch({
-    state: state,
-    type: type,
-    language: language,
-    services: services,
-    genres: genres,
-  });
-}
+  function handleClick(event) {
+    event.preventDefault();
+    setLoaded(true);
+    setSearch({
+      state: state,
+      type: type,
+      language: language,
+      services: services,
+      genres: genres,
+    });
+  }
 
   function handleState(event) {
     event.preventDefault();
@@ -51,9 +51,9 @@ function handleClick(event) {
           <select id="state" className="col" onChange={handleState}>
             <option value="">Choose your State</option>
             <option value="us">United States</option>
-            <option value="gb">United Kingdom</option>
             <option value="it">Italy</option>
             <option value="es">Spain</option>
+            <option value="gb">United Kingdom</option>
           </select>
           <select id="type" className="col" onChange={handleType}>
             <option value="">Choose a type</option>
@@ -67,7 +67,6 @@ function handleClick(event) {
             <option value="">Choose a language</option>
             <option value="en">English</option>
             <option value="es">Spanish</option>
-            <option value="it">Italian</option>
             <option value="fr">French</option>
           </select>
           <select id="services" className="col" onChange={handleServices}>

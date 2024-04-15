@@ -1,6 +1,37 @@
-.Movies p{
-    color: #D8BAFF;
-    background-color: #9F1D66;
-    margin: 5px;
-    padding: 5px 10px;
+.Movies .col-md-4 {
+  margin-bottom: 15px;
+  font-family: "Platypi", serif;
+}
+
+.Movies h6 {
+  text-align: center;
+  color: rgba(7, 3, 44, 1);
+  font-weight: bold;
+}
+
+.Movies em {
+    font-weight: bold;
+    color: rgba(7, 3, 44, 1);
+}
+
+.Movies p {
+  color: #d8baff;
+  background-color: #9f1d66;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+
+
+@media (max-width: 900px) {
+    .Movies h6{
+        font-size: 14px;
+    }
+    
+    .Movies small {
+        font-size: 12px;
+    }
+    .Movies p, em {
+        font-size: 13px;
+    }
 }

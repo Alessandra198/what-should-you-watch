@@ -11,12 +11,19 @@ export default function Movies(props) {
             return (
               <div key={index} className="col-md-4">
                 <p>
-                  {" "}
-                  Title: {value.originalTitle}
-                  <br />
-                  Cast:
+                  <h6>{value.originalTitle}</h6>
+                  <div>
+                    <small>
+                      <em>Plot:</em> {value.overview}
+                    </small>
+                  </div>
+                  <em className="cast">Cast:</em>
                   {value.cast.map(function (member, index) {
-                    return <p>{member}</p>;
+                    return (
+                      <small>
+                        <p key={index}>{member}</p>
+                      </small>
+                    );
                   })}
                 </p>
               </div>
