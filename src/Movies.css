@@ -17,6 +17,9 @@
 .Movies .paragraph {
   color: #d8baff;
   background-color: #9f1d66;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+
   padding: 5px 10px;
   margin: 0;
 }
